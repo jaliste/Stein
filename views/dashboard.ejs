@@ -112,7 +112,7 @@
     try {
       sheetId = inputURL.split('spreadsheets/d/')[1].split('/')[0];
     } catch (err) {
-      return alert('Invalid URL');
+      return alert('Not a spreadsheet URL');
     }
 
     const queryURL = `/storages`, queryOptions = {
